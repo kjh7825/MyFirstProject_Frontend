@@ -5,8 +5,7 @@ import MainLayout from "../layouts/MainLayout";
 const MainPresenter = () => {
     return (
         <BaseLayout>
-            <MainLayout>
-            </MainLayout>
+            <MainLayout></MainLayout>
         </BaseLayout>
     );
 };

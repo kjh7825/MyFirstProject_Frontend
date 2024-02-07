@@ -1,16 +1,10 @@
-import styled from '@emotion/styled';
-import React from 'react';
+import SidebarContainer from "./container/SidebarContainer";
+
 
 const Sidebar = () => {
     return (
-        <Layout>
-            
-        </Layout>
+        <SidebarContainer />
     );
 };
 
 export default Sidebar;
-
-const Layout = styled`
-    
-`
