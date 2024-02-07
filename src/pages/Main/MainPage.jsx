@@ -1,5 +1,5 @@
 import React from 'react';
-import MainContainer from './container/MainContainer';
+import MainContainer from './MainContainer';
 
 const MainPage = () => {
     return (

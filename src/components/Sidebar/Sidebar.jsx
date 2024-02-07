@@ -1,9 +1,9 @@
-import SidebarContainer from "./container/SidebarContainer";
+import SidebarContainer from "./SidebarContainer";
 
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return (
-        <SidebarContainer />
+        <SidebarContainer setPage={props.setPage}/>
     );
 };
 

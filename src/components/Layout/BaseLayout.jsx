@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 const BaseLayout = (props) => {
     return (
         <Layout>
-            <Sidebar />
+            <Sidebar setPage={props.setPage} />
             {props.children}
         </Layout>
     );

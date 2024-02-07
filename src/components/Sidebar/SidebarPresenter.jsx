@@ -1,9 +1,9 @@
 import React from 'react';
 import { UserOutlined } from "@ant-design/icons";
-import * as Layout from "../items/Layouts";
-import * as Items from "../items/items";
+import * as Layout from "./items/Layouts";
+import * as Items from "./items/items";
 
-const SidebarPresecter = () => {
+const SidebarPresecter = (props) => {
     return (
         <Layout.Layout>
             <Layout.ColumnWrapper>
@@ -18,10 +18,10 @@ const SidebarPresecter = () => {
                 </Items.SignButton>
             </Layout.ColumnWrapper>
             <Layout.ColumnWrapper>
-                <Items.LinkButton to="/signin" bgc="#FA016D" color="#fff">
+                <Items.LinkButton onClick={() => props.controlPage("DailyLog")} bgc="#FA016D" color="#fff">
                     일상 공유
                 </Items.LinkButton>
-                <Items.LinkButton to="/signup" bgc="#fff" color="#000">
+                <Items.LinkButton onClick={() => props.controlPage("SecondhendMarket")} bgc="#fff" color="#000">
                     중고 마켓
                 </Items.LinkButton>
             </Layout.ColumnWrapper>
