@@ -1,9 +1,10 @@
-import React from 'react';
 import CardPresenter from "./CardPresenter";
 
 const CardContainer = () => {
     return (
-        <CardPresenter />
+        <div>
+            <CardPresenter/>
+        </div>
     );
 };
 
