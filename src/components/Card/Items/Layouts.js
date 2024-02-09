@@ -5,8 +5,7 @@ export const Layout = styled.div`
   position: relative;
   width: 90%;
   background-color: #e3ded9;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 15px;
   margin: 0 auto;
 `
 export const RowWrapper = styled.div`
@@ -23,6 +22,6 @@ export const ColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5px 5px 0 5px;
+  padding: 5px 12px 0 12px;
   margin-top: auto;
 `

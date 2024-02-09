@@ -20,13 +20,19 @@ const ControlBarPresenter = (props) => {
     }
 
     return (
-        <Layouts.Layout onSubmit={props.onSearchHandler}>
-                <Items.InputBox onChange={props.onChangeHandler}/>
-                <Cascader style={{width: '40%',}} options={props.options} onChange={props.onChangeLocate} placeholder="지역을 선택해주세요" />
-                <Items.SearchBtn>검색하기</Items.SearchBtn>
-                <DoubleLeftOutlined style={toTopStyle} onClick={props.toTop}/>
-                <HomeFilled style={toHomeStyle} onClick={props.toHome} />
-        </Layouts.Layout>
+        <>
+            <Layouts.Layout onSubmit={props.onSearchHandler}>
+                <Layouts.RowWrapper>
+                    <Items.InputBox onChange={props.onChangeHandler}/>
+                    <Cascader style={{width: '40%',}} options={props.options} onChange={props.onChangeLocate} placeholder="지역을 선택해주세요" />
+                    <Items.SearchBtn>검색하기</Items.SearchBtn>
+                </Layouts.RowWrapper>
+                <Layouts.RowWrapper>
+                    <DoubleLeftOutlined style={toTopStyle} onClick={props.toTop}/>
+                    <HomeFilled style={toHomeStyle} onClick={props.toHome} />
+                </Layouts.RowWrapper>
+            </Layouts.Layout>
+        </>
     );
 };
 

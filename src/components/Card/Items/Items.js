@@ -4,12 +4,14 @@ export const Image = styled.img`
   display: block;
   width: 100%;
   object-fit: cover;
+  border-radius: 15px;
+  height: 150px;
 `
 export const Title = styled.div`
   width: 100%;
   font-weight: bold;
-  font-size: 16px;
-  padding: 15px 10px 10px 10px;
+  font-size: 12px;
+  padding: 5px 15px 5px 15px;
   word-break: keep-all;
   white-space: nowrap;
   overflow: hidden;
@@ -20,8 +22,8 @@ export const Content = styled.div`
   font-weight: normal;
   white-space: normal;
   width: 100%;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 12px;
+  padding: 0 15px 5px 15px;
   overflow: hidden;
   line-height: 1.1em;
   height: calc(3.3em + 10px);
@@ -31,7 +33,7 @@ export const Content = styled.div`
 `
 export const BoldText = styled.div`
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   color: #72625d;
   
   &:before {

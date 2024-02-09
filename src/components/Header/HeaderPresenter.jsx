@@ -2,7 +2,7 @@ import React from 'react';
 import * as Layouts from "./Items/Layouts";
 import * as Items from "./Items/Items";
 
-const HeaderPresenter = () => {
+const HeaderPresenter = (props) => {
     return (
         <Layouts.Layout>
             <Layouts.RowWrapper>
@@ -13,8 +13,14 @@ const HeaderPresenter = () => {
                 </Layouts.ColumnWrapper>
             </Layouts.RowWrapper>
             <Layouts.RowWrapper>
-                <Items.Menu to={"/DailyLog"}>Daily Log</Items.Menu>
-                <Items.Menu to={"/SecondHandMarket"}>Market</Items.Menu>
+                <Items.Menu
+                    isCurrentPage={props.currentPage === "/DailyLog"}
+                    onClick={() => props.setCurrentPage("/DailyLog")}
+                    to={"/DailyLog"}>Daily Log</Items.Menu>
+                <Items.Menu
+                    isCurrentPage={props.currentPage === "/SecondHandMarket"}
+                    onClick={() => props.setCurrentPage("/SecondHandMarket")}
+                    to={"/SecondHandMarket"}>Market</Items.Menu>
             </Layouts.RowWrapper>
             <Layouts.RowWrapper>
                 <Layouts.SignWrapper>

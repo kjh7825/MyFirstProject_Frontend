@@ -20,6 +20,7 @@ export default BaseLayout;
 const Layout = styled.div`
   padding: 120px 12% 0 12%;
   outline: 2px solid #000;
+  outline-offset: 100px;
   width: 100%;
   position: absolute;
   top: 0;

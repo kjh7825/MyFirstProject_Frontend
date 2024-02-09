@@ -11,15 +11,17 @@ export const BaseText = styled.div`
   font-size: 16px;
   font-weight: bold;
 `
-export const Menu = styled(Link)`
+export const Menu = styled(Link, {
+    shouldForwardProp: prop => prop !== 'isCurrentPage',
+})`
   font-size: 24px;
   font-weight: bold;
   color: #000;
   margin: auto auto 0 auto;
   padding: 15px;
   border-radius: 15px;
-  //background-color: dodgerblue;
-`
+  text-decoration: ${props => props.isCurrentPage ? 'underline' : 'none'};
+`;
 export const SignBtn = styled(Link)`
   font-size: 16px;
   height: 50px;
