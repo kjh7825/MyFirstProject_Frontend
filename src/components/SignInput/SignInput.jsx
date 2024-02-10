@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import SignInputContainer from "./SignInputContainer";
 
-const SignInput = (props) => {
+
+const SignInput = forwardRef((props, ref) => {
     return (
         <SignInputContainer
-            usage={props.usage}
-            userData={props.userId} setUserData={props.setUserData}
-            Validation={props.Validation}
+            {...props}
+            ref={ref}
         />
     );
-};
-
+});
+SignInput.displayName = "SignInput";
 export default SignInput;

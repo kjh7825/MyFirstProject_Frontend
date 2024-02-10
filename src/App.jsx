@@ -5,6 +5,7 @@ import Card from "./components/Card/Card";
 import DailyLog from "./pages/DailyLog/DailyLog";
 import SecondhandMarket from "./pages/SecondhandMarket/SecondhandMarket";
 import SignIn from "./pages/SignIn/SignIn";
+import SignUp from "./pages/SignUp/SignUp";
 
 
 // 라우터 객체 생성
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
   { path: "/DailyLog", element:<DailyLog /> },
   { path: "/SecondHandMarket", element:<SecondhandMarket /> },
   { path: "/SignIn", element:<SignIn /> },
+  { path: "/SignUp", element:<SignUp /> },
 ]);
 
 function App() {

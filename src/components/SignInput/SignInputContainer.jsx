@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, {forwardRef, useEffect, useState} from 'react';
 import SignInputPresenter from "./SignInputPresenter";
 
-const SignInputContainer = (props) => {
+const SignInputContainer = forwardRef((props, ref) => {
     // 포커스 스타일은 입력 전, 입력 중, 입력 완료, 경고 총 4가지가 있다.
     // 입력전 : "standby", 입력중 : "typing", 입력 완료 : "ok", 경고 : "warning"
 
@@ -77,8 +77,9 @@ const SignInputContainer = (props) => {
             onBlurHandler={onBlurHandler}
             inputStyle={inputStyle}
             color={color}
+            ref={ref}
         />
     );
-};
-
+});
+SignInputContainer.displayName = "SignInputContainer";
 export default SignInputContainer;

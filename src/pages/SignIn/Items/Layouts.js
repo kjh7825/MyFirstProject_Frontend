@@ -13,6 +13,13 @@ export const LoginForm = styled.form`
   width: 500px;
   flex-direction: column;
   padding: 50px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius: 15px;
+`
+export const RowWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
 `

@@ -3,9 +3,7 @@ import SignInContainer from "./SignInContainer";
 
 const SignIn = () => {
     return (
-        <SignInContainer>
-
-        </SignInContainer>
+        <SignInContainer />
     );
 };
 
