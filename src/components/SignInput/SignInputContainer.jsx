@@ -78,6 +78,7 @@ const SignInputContainer = forwardRef((props, ref) => {
             inputStyle={inputStyle}
             color={color}
             ref={ref}
+            usage={props.usage}
         />
     );
 });

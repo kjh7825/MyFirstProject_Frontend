@@ -11,6 +11,9 @@ const SignInputPresenter = forwardRef((props, ref) => {
                 onChange={props.onChangeHandler}
                 color={props.color}
                 ref={ref}
+                type={props.usage==="id"? "text":
+                    props.usage==="pw"? "password":
+                    "hidden"}
             />
             <Items.Message style={props.inputStyle}>{props.message || "개발자님, 메세지가 비어있습니다!"}</Items.Message>
         </Layouts.Layout>
